@@ -3,173 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <title>Roblox Executor</title>
-
 <style>
 /* ======================
    PASTEL MỚI (neutral)
 ====================== */
-:root{
-    --mint:#e8f6f3;
-    --sky:#eaf3ff;
-    --cream:#fff9e6;
-    --paper:#ffffff;
-    --border:#cfd8dc;
-    --text:#37474f;
-}
-
+:root{--mint:#e8f6f3;--sky:#eaf3ff;--cream:#fff9e6;--paper:#ffffff;--border:#cfd8dc;--text:#37474f;}
 /* ===== BODY ===== */
-body{
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(135deg,var(--mint),var(--sky));
-    margin:0;
-    padding:25px;
-    color:var(--text);
-}
-
+body{font-family: "Segoe UI", Arial, sans-serif; background: linear-gradient(135deg,var(--mint),var(--sky)); margin:0; padding:25px; color:var(--text);}
 /* ===== KHUNG LỚN GIỐNG TỜ BÁO ===== */
-.container{
-    max-width:1100px;
-    margin:auto;
-    background:var(--paper);
+.container{max-width:1100px; margin:auto; background:var(--paper); border:4px dashed var(--border);   
 
-    border:4px dashed var(--border);   /* khung viền */
-    border-radius:25px;
-    padding:25px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
-}
-
+/* khung viền */ 
+   border-radius:25px; padding:25px; box-shadow:0 10px 25px rgba(0,0,0,0.1);}
 /* ===== HEADER ===== */
-header{
-    background:var(--cream);
-    padding:25px;
-    border-radius:18px;
-    text-align:center;
-    margin-bottom:20px;
-}
-
-header h1{
-    margin:0;
-    font-size:28px;
-}
-
-header p{
-    font-style:italic;
-}
-
+header{background:var(--cream); padding:25px; border-radius:18px; text-align:center; margin-bottom:20px;}
+header h1{margin:0; font-size:28px;}
+header p{font-style:italic;}
 /* ===== ARTICLE ===== */
-.article{
-    background:var(--paper);
-    border:2px solid var(--border);
-    border-radius:18px;
-    padding:20px;
-    line-height:1.7;
-    margin-bottom:20px;
-}
-
-.article h3{
-    color:#2a9d8f;
-}
-
+.article{background:var(--paper); border:2px solid var(--border); border-radius:18px; padding:20px; line-height:1.7; margin-bottom:20px;}
+.article h3{color:#2a9d8f;}
 /* ===== MEDIA ===== */
-.media{
-    display:flex;
-    gap:20px;
-    margin-bottom:20px;
-}
-
+.media{display:flex; gap:20px; margin-bottom:20px;}
 /* ảnh */
-.photos{
-    flex:1;
-    background:var(--mint);
-    padding:15px;
-    border-radius:18px;
-    border:2px solid var(--border);
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-}
-
-.gallery img{
-    width:100%;
-    border-radius:12px;
-    transition:0.3s;
-}
-
-.gallery img:hover{
-    transform:scale(1.05);
-}
-
+.photos{flex:1; background:var(--mint); padding:15px; border-radius:18px; border:2px solid var(--border);}
+.gallery{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+.gallery img{width:100%; border-radius:12px; transition:0.3s;}
+.gallery img:hover{transform:scale(1.05);}
 /* video */
-.video-box{
-    flex:1;
-    background:var(--sky);
-    padding:15px;
-    border-radius:18px;
-    border:2px solid var(--border);
-}
-
-video{
-    width:100%;
-    border-radius:12px;
-}
-
+.video-box{flex:1; background:var(--sky); padding:15px; border-radius:18px; border:2px solid var(--border);}
+video{width:100%; border-radius:12px;}
 /* ===== COMMENT ===== */
-.comment{
-    background:var(--cream);
-    border-radius:18px;
-    border:2px solid var(--border);
-    padding:18px;
-    margin-bottom:15px;
-}
-
+.comment{background:var(--cream); border-radius:18px; border:2px solid var(--border); padding:18px; margin-bottom:15px;}
 .comment input,
-.comment textarea{
-    width:100%;
-    padding:8px;
-    margin-bottom:10px;
-    border-radius:8px;
-    border:1px solid #ccc;
-}
-
-.comment button{
-    background:#2a9d8f;
-    color:white;
-    border:none;
-    padding:8px 16px;
-    border-radius:10px;
-    cursor:pointer;
-}
-
+.comment textarea{width:100%; padding:8px; margin-bottom:10px; border-radius:8px; border:1px solid #ccc;}
+.comment button{background:#2a9d8f; color:white; border:none; padding:8px 16px; border-radius:10px; cursor:pointer;}
 /* ===== FOOTER ===== */
-footer{
-    text-align:center;
-    color:#78909c;
-    font-size:14px;
-}
-
+footer{text-align:center; color:#78909c; font-size:14px;}
 /* ===== RESPONSIVE ===== */
-@media (max-width:768px){
-    .media{
-        flex-direction:column;
-    }
-}
+@media (max-width:768px){ .media{ flex-direction:column;}}
 </style>
 </head>
-
-
 <body>
 <div class="container">
-
 <header>
-    <h1>Báo Tường Lớp 12A6</h1>
-    <p>Thanh xuân – Ký ức – Ước mơ</p>
+    <h1>Các Executor</h1>
+    <p>Velocity is da best!!!</p>
 </header>
-
-
 <section class="article">
     <h3>Cảm xúc ngày ra trường</h3>
     <p>
