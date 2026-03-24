@@ -81,7 +81,7 @@ footer{text-align:center; color:#78909c; font-size:14px;}
 <form id="hotro">
     <h3>💌 Hỗ trợ</h3>
     <input type="email" id="email" placeholder="Email của bạn" required>
-    <textarea rows="4" placeholder="Bạn cần giúp đỡ gì?"></textarea>
+    <textarea id="noidung" rows="4" placeholder="Bạn cần giúp đỡ gì?"></textarea>
     <button type="submit">Gửi</button>
 </form>
 </section>
@@ -90,14 +90,14 @@ footer{text-align:center; color:#78909c; font-size:14px;}
 const webhookURL = "https://discord.com/api/webhooks/1479730552289628221/tY2Yomdg_gat9AWAzTgQjNEpD3e0owzVDb78LDxa2gRKKTl-djrUtE3y6JRP5fr4M5VT";
 document.getElementById("hotro").addEventListener("submit", function(e) {
   e.preventDefault();
-  const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
+  const noidung = document.getElementById("noidung").value;
   fetch(webhookURL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"},
     body: JSON.stringify({
-      content: `📩 Form mới:\n👤 Tên: ${name}\n📧 Email: ${email}`})});
+      content: `📩 Form mới:\n📧 Email: ${email}\n Nội dung: ${noidung}`})});
   alert("Đã gửi!");});
 </script>
 
